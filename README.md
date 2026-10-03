@@ -1,6 +1,9 @@
-# Download Loopcast
+# Download Loopcast ![Beta](https://img.shields.io/badge/status-beta-9184d9)
 
 > This repository only hosts Loopcast's installers and update files. The source code is private.
+
+> **Loopcast is in beta.** It works and updates itself, but features are still being added
+> and posting is simulated for now. Thanks for trying it early.
 
 **Get the latest version:** https://github.com/crystallyons89-ai/loopcast-releases/releases/latest
 
