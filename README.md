@@ -1,7 +1,6 @@
-> This repository only hosts Loopcast's installers and update files. The source code is private.
-
 # Download Loopcast
 
+> This repository only hosts Loopcast's installers and update files. The source code is private.
 
 **Get the latest version:** https://github.com/crystallyons89-ai/loopcast-releases/releases/latest
 
