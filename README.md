@@ -90,6 +90,6 @@ computer's own keychain (Windows Credential Manager, macOS Keychain, or the Linu
 and never leave your machine. Loopcast does not include anyone else's accounts or keys.
 Your videos, schedule and queue are stored locally too.
 
-> **Current status:** account connections in setup are still placeholders — real
-> sign-in for each platform is coming in a later version. Uploads and posts are simulated
-> until then; nothing is published to your accounts.
+> **Current status:** sign-in for each platform switches on as its developer app is
+> approved; until then its Connect button says it isn't set up yet. Uploads and posts
+> are still simulated; nothing is published to your accounts.
