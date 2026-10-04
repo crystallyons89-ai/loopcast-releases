@@ -15,7 +15,7 @@
 </header>
 <main>
   <h1>Privacy policy</h1>
-  <p class="muted">Effective October 3, 2026</p>
+  <p class="muted">Effective October 4, 2026</p>
 
   <p>Loopcast is a desktop application that helps YouTube creators prepare, schedule and publish their own videos and posts. This policy explains what information Loopcast accesses, where it is kept, and how you control it. Loopcast runs on your computer: <strong>Loopcast has no servers that store your information, never sells it, and does not use it for advertising.</strong></p>
 
@@ -27,15 +27,15 @@
   <table>
     <tr><th>Permission</th><th>What Loopcast does with it</th></tr>
     <tr><td>Manage your YouTube videos (<code>youtube.upload</code>)</td><td>Uploads only the videos you approve in Loopcast's approval queue, with the title, description, tags, privacy setting and publish time you approved, and sets the thumbnail image you chose.</td></tr>
-    <tr><td>Manage your YouTube account (<code>youtube</code>)</td><td>Reads your channel's name, description and keywords, and the titles, tags, IDs and view counts of up to 200 of your uploads. Loopcast uses these to work out your channel's niche and topics, and to link your posts to your own matching videos. Loopcast does not currently use this permission to change or delete anything on your channel.</td></tr>
-    <tr><td>View YouTube Analytics reports (<code>yt-analytics.readonly</code>)</td><td>Reserved for suggesting posting times from your audience's viewing patterns. The current version of Loopcast does not read your analytics.</td></tr>
+    <tr><td>Manage your YouTube account (<code>youtube</code>)</td><td>Reads your channel's name, description and keywords, and the titles, tags, IDs and view counts of up to 200 of your uploads. Loopcast uses these to work out your channel's niche and topics, and to link your posts to your own matching videos. If you turn on <em>Live loop</em>, Loopcast also uses this permission to create a live broadcast and stream on your channel for each window you approve, and to end them when the window is over. Loopcast never changes or deletes your existing videos.</td></tr>
+    <tr><td>View YouTube Analytics reports (<code>yt-analytics.readonly</code>)</td><td>Reads your own channel's analytics (views, watch time, subscribers, which websites sent viewers, live watch time, and your top videos) to show them on Loopcast's Analytics and Overview screens. Analytics are kept in memory for up to 15 minutes while Loopcast is open, and are never written to disk or sent anywhere.</td></tr>
   </table>
   <p>Loopcast also receives your channel name to show which account is connected.</p>
 
   <h2>Where your information is kept</h2>
   <ul>
     <li><strong>Sign-in tokens</strong> are stored in your computer's own credential store: Windows Credential Manager, the macOS Keychain, or the Linux Secret Service. They are never written to an ordinary file and never sent to the Loopcast developer.</li>
-    <li><strong>Your channel information and video list</strong> (described above), the packages Loopcast prepares, your approval queue and Loopcast's activity log are stored in Loopcast's data folder on your computer only.</li>
+    <li><strong>Your channel information and video list</strong> (described above), the packages Loopcast prepares, your approval queue, your live-loop schedule and Loopcast's activity log are stored in Loopcast's data folder on your computer only. A stream-ready copy of the video you choose for live loops is kept there too, and replaced when you choose another.</li>
     <li>Loopcast refreshes the stored channel information from YouTube at least every 30 days, and replaces the old copy when it does.</li>
   </ul>
 
@@ -43,8 +43,10 @@
   <p>Loopcast does not sell, rent or share your information with anyone. Information leaves your computer only in these cases, all of them to carry out something you asked for:</p>
   <ul>
     <li><strong>To YouTube</strong>, when you approve an upload: the video file, its title, description, tags, privacy setting, publish time and thumbnail.</li>
+    <li><strong>To YouTube, for live loops</strong> you turn on and approve: the chosen video, streamed to your own channel for the window, with its title, description and the privacy setting you chose.</li>
     <li><strong>For keyword research</strong>: search phrases built from your niche keywords and words from your video's file name are sent to Google's public search-suggestion and Google Trends services and, if you enable it, to vidIQ with your own vidIQ key. These phrases are public search terms; no tokens or personal account details are included.</li>
     <li><strong>To X, TikTok and Instagram</strong>, only if you connect them and approve a post: the post text or caption you approved, which may include the title of and a link to one of your YouTube videos.</li>
+    <li><strong>Streaming tools:</strong> the first time you turn on Live loop, Loopcast downloads ffmpeg (a free video tool) from its public download page and checks it against a fixed checksum. Nothing about you is sent.</li>
     <li><strong>TikTok and Instagram sign-in</strong> passes once through a small sign-in relay that adds Loopcast's app credential, as those services require. The relay stores and logs nothing. YouTube data never goes through it.</li>
   </ul>
   <p>Loopcast's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Loopcast does not use information from Google APIs to develop, improve or train generalized artificial intelligence or machine learning models.</p>
