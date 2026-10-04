@@ -15,7 +15,7 @@
 </header>
 <main>
   <h1>Privacy policy</h1>
-  <p class="muted">Effective October 4, 2026</p>
+  <p class="muted">Effective October 5, 2026</p>
 
   <p>Loopcast is a desktop application that helps YouTube creators prepare, schedule and publish their own videos and posts. This policy explains what information Loopcast accesses, where it is kept, and how you control it. Loopcast runs on your computer: <strong>Loopcast has no servers that store your information, never sells it, and does not use it for advertising.</strong></p>
 
@@ -27,7 +27,7 @@
   <table>
     <tr><th>Permission</th><th>What Loopcast does with it</th></tr>
     <tr><td>Manage your YouTube videos (<code>youtube.upload</code>)</td><td>Uploads only the videos you approve in Loopcast's approval queue, with the title, description, tags, privacy setting and publish time you approved, and sets the thumbnail image you chose.</td></tr>
-    <tr><td>Manage your YouTube account (<code>youtube</code>)</td><td>Reads your channel's name, description and keywords, and the titles, tags, IDs and view counts of up to 200 of your uploads. Loopcast uses these to work out your channel's niche and topics, and to link your posts to your own matching videos. If you turn on <em>Live loop</em>, Loopcast also uses this permission to create a live broadcast and stream on your channel for each window you approve, and to end them when the window is over. Loopcast never changes or deletes your existing videos.</td></tr>
+    <tr><td>Manage your YouTube account (<code>youtube</code>)</td><td>Reads your channel's name, description and keywords, and the titles, tags, IDs, view counts and the start of the descriptions (up to 1,500 characters) of up to 200 of your uploads. Loopcast uses these to work out your channel's niche and topics, to link your posts to your own matching videos, and to write X post drafts from what those videos say. If you turn on <em>Live loop</em>, Loopcast also uses this permission to create a live broadcast and stream on your channel for each window you approve, and to end them when the window is over. Loopcast never changes or deletes your existing videos.</td></tr>
     <tr><td>View YouTube Analytics reports (<code>yt-analytics.readonly</code>)</td><td>Reads your own channel's analytics (views, watch time, subscribers, which websites sent viewers, live watch time, and your top videos) to show them on Loopcast's Analytics and Overview screens. Analytics are kept in memory for up to 15 minutes while Loopcast is open, and are never written to disk or sent anywhere.</td></tr>
   </table>
   <p>Loopcast also receives your channel name to show which account is connected.</p>
@@ -46,6 +46,7 @@
     <li><strong>To YouTube, for live loops</strong> you turn on and approve: the chosen video, streamed to your own channel for the window, with its title, description and the privacy setting you chose.</li>
     <li><strong>For keyword research</strong>: search phrases built from your niche keywords and words from your video's file name are sent to Google's public search-suggestion and Google Trends services and, if you enable it, to vidIQ with your own vidIQ key. These phrases are public search terms; no tokens or personal account details are included.</li>
     <li><strong>To X, TikTok and Instagram</strong>, only if you connect them and approve a post: the post text or caption you approved, which may include the title of and a link to one of your YouTube videos.</li>
+    <li><strong>To Anthropic, only if you add your own Claude API key</strong> (Settings → X post writing → Claude): to write an X post draft, Loopcast sends the featured video's title and description, the post's topic, your niche name and tone, and the text of your last few X posts (so the new one is different). Your key is stored only in your computer's credential store, requests are billed to your own Anthropic account, and Anthropic's commercial terms say it doesn't train its models on API data. Without a key, drafts are written on your computer and nothing is sent.</li>
     <li><strong>Streaming tools:</strong> the first time you turn on Live loop, Loopcast downloads ffmpeg (a free video tool) from its public download page and checks it against a fixed checksum. Nothing about you is sent.</li>
     <li><strong>TikTok and Instagram sign-in</strong> passes once through a small sign-in relay that adds Loopcast's app credential, as those services require. The relay stores and logs nothing. YouTube data never goes through it.</li>
   </ul>
