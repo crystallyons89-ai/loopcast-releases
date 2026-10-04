@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy: Loopcast</title>
+<link rel="icon" href="../loopcast-logo-120.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <img src="../loopcast-logo-120.png" alt="Loopcast logo">
+  <a class="name" href="../">Loopcast</a> <span class="beta">Beta</span>
+  <nav><a href="../">Home</a><a href="./" aria-current="page">Privacy policy</a><a href="../terms/">Terms of service</a></nav>
+</header>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="muted">Effective October 3, 2026</p>
+
+  <p>Loopcast is a desktop application that helps YouTube creators prepare, schedule and publish their own videos and posts. This policy explains what information Loopcast accesses, where it is kept, and how you control it. Loopcast runs on your computer: <strong>Loopcast has no servers that store your information, never sells it, and does not use it for advertising.</strong></p>
+
+  <h2>Loopcast uses YouTube API Services</h2>
+  <p>Loopcast uses YouTube API Services to work with your YouTube channel. By using Loopcast you also agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of your information is described in the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
+
+  <h2>Information Loopcast accesses from Google and YouTube</h2>
+  <p>When you choose <em>Connect YouTube</em>, Google asks you to grant Loopcast these permissions. Here is what each one allows and what Loopcast actually does with it:</p>
+  <table>
+    <tr><th>Permission</th><th>What Loopcast does with it</th></tr>
+    <tr><td>Manage your YouTube videos (<code>youtube.upload</code>)</td><td>Uploads only the videos you approve in Loopcast's approval queue, with the title, description, tags, privacy setting and publish time you approved, and sets the thumbnail image you chose.</td></tr>
+    <tr><td>Manage your YouTube account (<code>youtube</code>)</td><td>Reads your channel's name, description and keywords, and the titles, tags, IDs and view counts of up to 200 of your uploads. Loopcast uses these to work out your channel's niche and topics, and to link your posts to your own matching videos. Loopcast does not currently use this permission to change or delete anything on your channel.</td></tr>
+    <tr><td>View YouTube Analytics reports (<code>yt-analytics.readonly</code>)</td><td>Reserved for suggesting posting times from your audience's viewing patterns. The current version of Loopcast does not read your analytics.</td></tr>
+  </table>
+  <p>Loopcast also receives your channel name to show which account is connected.</p>
+
+  <h2>Where your information is kept</h2>
+  <ul>
+    <li><strong>Sign-in tokens</strong> are stored in your computer's own credential store: Windows Credential Manager, the macOS Keychain, or the Linux Secret Service. They are never written to an ordinary file and never sent to the Loopcast developer.</li>
+    <li><strong>Your channel information and video list</strong> (described above), the packages Loopcast prepares, your approval queue and Loopcast's activity log are stored in Loopcast's data folder on your computer only.</li>
+    <li>Loopcast refreshes the stored channel information from YouTube at least every 30 days, and replaces the old copy when it does.</li>
+  </ul>
+
+  <h2>What Loopcast sends elsewhere</h2>
+  <p>Loopcast does not sell, rent or share your information with anyone. Information leaves your computer only in these cases, all of them to carry out something you asked for:</p>
+  <ul>
+    <li><strong>To YouTube</strong>, when you approve an upload: the video file, its title, description, tags, privacy setting, publish time and thumbnail.</li>
+    <li><strong>For keyword research</strong>: search phrases built from your niche keywords and words from your video's file name are sent to Google's public search-suggestion and Google Trends services and, if you enable it, to vidIQ with your own vidIQ key. These phrases are public search terms; no tokens or personal account details are included.</li>
+    <li><strong>To X, TikTok and Instagram</strong>, only if you connect them and approve a post: the post text or caption you approved, which may include the title of and a link to one of your YouTube videos.</li>
+    <li><strong>TikTok and Instagram sign-in</strong> passes once through a small sign-in relay that adds Loopcast's app credential, as those services require. The relay stores and logs nothing. YouTube data never goes through it.</li>
+  </ul>
+  <p>Loopcast's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Loopcast does not use information from Google APIs to develop, improve or train generalized artificial intelligence or machine learning models.</p>
+
+  <h2>Your choices and how to delete your information</h2>
+  <ul>
+    <li><strong>Disconnect in Loopcast:</strong> Settings → Connections → YouTube → <em>Disconnect</em>. Loopcast revokes its access with Google, deletes the sign-in tokens from your credential store, and deletes the stored channel information and video list.</li>
+    <li><strong>Revoke access from Google:</strong> visit Google's security settings at <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a> and remove Loopcast. The next time Loopcast tries to use YouTube it detects the revocation, deletes the stored channel information and video list, and shows the connection as needing reconnection.</li>
+    <li><strong>Delete everything:</strong> uninstall Loopcast and delete its data folder: <code>%APPDATA%\app.loopcast.desktop</code> on Windows, <code>~/Library/Application Support/app.loopcast.desktop</code> on macOS, or <code>~/.local/share/app.loopcast.desktop</code> and <code>~/.config/app.loopcast.desktop</code> on Linux.</li>
+  </ul>
+  <p>Your niche keywords and topics are your own settings in Loopcast. You can edit or delete them at any time in Settings.</p>
+
+  <h2>Cookies and device storage</h2>
+  <p>Loopcast does not use cookies or tracking. It stores the information described above on your device so the app can work, and it does not collect analytics about how you use the app.</p>
+
+  <h2>Security</h2>
+  <p>Connections to Google, YouTube and other services use HTTPS. Sign-in uses Google's recommended method for installed apps (OAuth 2.0 with PKCE), and tokens are kept in your operating system's credential store.</p>
+
+  <h2>Children</h2>
+  <p>Loopcast is not directed to children under 13, and you must meet YouTube's age requirements to use it.</p>
+
+  <h2>Changes</h2>
+  <p>If Loopcast's use of your information changes, this page will be updated, with the effective date above, before the new version of the app uses it.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="https://github.com/crystallyons89-ai/loopcast-releases/issues">open an issue on Loopcast's GitHub page</a>.</p>
+</main>
+<footer>
+  <a href="../">Loopcast home</a> · <a href="../terms/">Terms of service</a> · <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>
+</footer>
+</body>
+</html>
